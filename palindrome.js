@@ -38,7 +38,7 @@ const Palindrome = (inp)=> {
     const entries = Object.entries(charCount);
 
     //loop through that array, check for nulls and odds:
-    for (let i = 0; i < entries.length; ++i) {
+    for (let i = 0; i < entries.length; i++) {
       const [char, counter] = entries[i];
       if (counter % 2) { //* odd
         if (parts[1] !== '') return false;
