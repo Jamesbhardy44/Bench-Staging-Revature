@@ -38,7 +38,7 @@ const Palindrome = (inp)=> {
     const entries = Object.entries(charCount);
 
     //loop through that array, check for nulls and odds:
-    for (let i = 0; i < entries.length; i++) {
+    for (let i = 0; i < entries.length; ++i) {
       const [char, counter] = entries[i];
       if (counter % 2) { //* odd
         if (parts[1] !== '') return false;
@@ -55,11 +55,13 @@ const Palindrome = (inp)=> {
     return true; // if we get here, it's a palindrome.
   }
   
+let testRes = Palindrome?': passed' : ': failed';
+
   console.log('BEGINNING Palindrome TEST SUITE:')
-  console.log('case 1: returned: '+ Palindrome("rearcac")+' '+ ': passed');      //pass  T
-  console.log('case 2: returned: '+ Palindrome("REARcac")+' '+': passed');     //pass   T
-  console.log('case 3: returned: '+ Palindrome("suhBEUsheff")+' '+': passed'); //pass   T
-  console.log('case 4: returned: '+ Palindrome("paLIndrome")+' '+': passed'); //pass    F
-  console.log('case 5: returned: '+ Palindrome("r")+' '+': passed');         //pass     F,   error
+  console.log('case 1: returned: '+ Palindrome("rearcac")+' '+ testRes);      //pass  T
+  console.log('case 2: returned: '+ Palindrome("REARcac")+' '+testRes);     //pass   T
+  console.log('case 3: returned: '+ Palindrome("suhBEUsheff")+' '+testRes); //pass   T
+  console.log('case 4: returned: '+ Palindrome("paLIndrome")+' '+testRes); //pass    F
+  console.log('case 5: returned: '+ Palindrome("r")+' '+testRes);         //pass     F,   error
 
 
