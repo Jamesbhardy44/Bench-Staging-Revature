@@ -26,8 +26,8 @@ Words are given in all lowercase.
 */
 const Palindrome = (inp)=> {
     let strIn = inp.toLowerCase();
-    //return early if they only passed in 1 letter:
-    if (strIn.length <= 1){console.error('you only entered 1 letter'); return false;} 
+    //return early if they only passed in 1 or less letter:
+    if (strIn.length <= 1){console.error('case only has 1 or less letters!'); return false;} 
     //begin processing input:
     const charCount = strIn.split('').reduce((counter, ch) => ({
       ...counter,
@@ -57,11 +57,14 @@ const Palindrome = (inp)=> {
   
 let testRes = Palindrome?': passed' : ': failed';
 
+
   console.log('BEGINNING Palindrome TEST SUITE:')
+  console.log('----------------------------------')
   console.log('case 1: returned: '+ Palindrome("rearcac")+' '+ testRes);      //pass  T
   console.log('case 2: returned: '+ Palindrome("REARcac")+' '+testRes);     //pass   T
   console.log('case 3: returned: '+ Palindrome("suhBEUsheff")+' '+testRes); //pass   T
   console.log('case 4: returned: '+ Palindrome("paLIndrome")+' '+testRes); //pass    F
+  console.log('----------EDGE CASE------------------------')
   console.log('case 5: returned: '+ Palindrome("r")+' '+testRes);         //pass     F,   error
 
 
