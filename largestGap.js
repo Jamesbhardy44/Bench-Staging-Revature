@@ -15,18 +15,6 @@ Explanation :
 Here, we can see largest gap can be 
 found between -3 and 7 which is 10
 
-**REQUIREMENT UPDATE**----------------------------------
-
-SEE script 2
-
-
-Input: arr[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4} 
-Output: 6 
-{4, -1, 2, 1} is the required sub-array.
-Input: arr[] = {2, 2, -2} 
-Output: 4 
-
-
 
 */
 
