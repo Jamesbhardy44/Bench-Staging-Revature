@@ -19,6 +19,9 @@ found between -3 and 7 which is 10
 //James Hardy
 const testArr2 = [-3, -1, 6, 7, 0];
 const testArr1 = [3, 10, 6, 7];
+const testArr3 = [];
+
+
 
 const findLargestGapInArray = (array)=>{
     let paramArraySorted = array.sort();
@@ -28,5 +31,16 @@ const findLargestGapInArray = (array)=>{
     return res;
 }
 
+const edgeCaseArrayCreator = ()=>{
+    var i = 0;
+    while(i < 100){
+        testArr3.push(i);
+        i++
+        }
+    }
+    
+edgeCaseArrayCreator();//populate testArr3
+
 console.log(findLargestGapInArray(testArr1)); //7  PASS
 console.log(findLargestGapInArray(testArr2)); //10 PASS
+console.log(findLargestGapInArray(testArr3)); //99 PASS
