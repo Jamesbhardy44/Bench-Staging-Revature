@@ -31,7 +31,7 @@ Output: 4
 */
 
 //James Hardy
-const testArr0 = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+
 const testArr2 = [-3, -1, 6, 7, 0];
 const testArr1 = [3, 10, 6, 7];
 const testArr3 = [];
@@ -59,4 +59,3 @@ edgeCaseArrayCreator();//populate testArr3
 console.log(findLargestGapInArray(testArr1)); //7  PASS
 console.log(findLargestGapInArray(testArr2)); //10 PASS
 console.log(findLargestGapInArray(testArr3)); //99 PASS
-console.log(findLargestGapInArray(testArr0));
