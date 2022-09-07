@@ -12,13 +12,6 @@ Input: arr[] = {2, 2, -2}
 
 Output: 4 
 
-
-##can get one or the other to work. 
-
-did shanker make an error with the question?
-
-
-
 */
 
 const arr1 = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
