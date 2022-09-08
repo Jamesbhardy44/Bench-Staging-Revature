@@ -42,7 +42,6 @@ const findMaxSubArray = (array)=>{
             res.array = array.slice(maxIndex, minIndex);
             res.max = Math.max(...res.array);
             res.maxTwo = secondMax(res.array);
-            res.min = Math.min(...res.array);
             restoreArray(res.array);
             res.min = Math.min(...res.array);
             res.sum = res.max + res.maxTwo;
