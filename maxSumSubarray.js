@@ -13,14 +13,6 @@ Output: 4
 const arr1 = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
 const arr2 = [2, 2, -2];
 
-const add = (array)=>{
-    let sum =0;
-    for(let i = 0; i < array.length; i++){
-        sum += array[i];
-    }
-    return sum;
-}
-
 const temp = {};
 
 const secondMax = (array)=>{ 
