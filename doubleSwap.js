@@ -10,7 +10,9 @@ const doubleSwap=(fullInputString, param1, param2)=>{
             splitString[i]= param1;
         }
   }
-  return splitString;
+  let preRes =  splitString.toString();
+  let res = preRes.replace(/,/g, '');
+  return res;
 }
 
 console.log(doubleSwap("aabbccc", "a", "b"));
