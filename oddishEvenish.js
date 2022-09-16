@@ -6,11 +6,6 @@ const addArray = (array)=>{
     }
     return sum;
 }
-const add = (number)=>{
-    let sum = 0;
-    sum += number;
-    return sum;
-}
 const isEven = (number) =>{
     if(number % 2 === 0){
         return true;
@@ -41,7 +36,6 @@ const evenOrOddish = (number) =>{
    }
    return evenish;
 }
-
 console.log('================')
 console.log('Case 43: '+evenOrOddish(43)); 
 console.log('================')
