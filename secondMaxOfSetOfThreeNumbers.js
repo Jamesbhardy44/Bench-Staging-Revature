@@ -50,9 +50,9 @@ const secondMaxOfSetOfThreeNumbers = (array)=>{
     handleErrors(n, array);
     let res = seperateArrayIntoThree(array);
     //maxes:
-    maxZero = Math.max(...res.arr0);
-    maxOne = Math.max(...res.arr1);
-    maxTwo = Math.max(...res.arr2);
+    let maxZero = Math.max(...res.arr0);
+    let maxOne = Math.max(...res.arr1);
+    let maxTwo = Math.max(...res.arr2);
 
     //indexes of maxes:
     let maxZeroIndex = res.arr0.indexOf(maxZero);
