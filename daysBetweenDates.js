@@ -1,4 +1,4 @@
-const _MillisecondsPerDay = 1000 * 60 * 60 * 24;
+const _MsPerDay = 1000 * 60 * 60 * 24;
 
 //Test variables
 const test1ParamStart = "June 14, 2019"; 
@@ -15,7 +15,7 @@ const getDaysDifference =(startDateStr, endDateStr)=>{
     let endDate = new Date(endDateStr);
     let DateDiff = startDate.getTime() - endDate.getTime();
 
-    let dayDiff = parseInt(Math.abs(DateDiff / (_MillisecondsPerDay)));
+    let dayDiff = parseInt(Math.abs(DateDiff / (_MsPerDay)));
     return dayDiff
 }
 
